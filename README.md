@@ -1,0 +1,2 @@
+# ELTECinema
+Projekt eszközök beadandó
