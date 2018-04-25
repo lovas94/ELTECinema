@@ -1,13 +1,13 @@
-package hu.elte.inf.projeszk.cinema.controller;
+package projeszk.eltecinema.controller;
 
-import hu.elte.inf.projeszk.cinema.annotation.Role;
-import hu.elte.inf.projeszk.cinema.exception.DataNotValidException;
-import hu.elte.inf.projeszk.cinema.exception.DuplicatedDataException;
-import hu.elte.inf.projeszk.cinema.exception.MissingDataException;
-import hu.elte.inf.projeszk.cinema.exception.OverLapsException;
-import hu.elte.inf.alkfejl.cinema.model.*;
-import hu.elte.inf.projeszk.cinema.service.ScreeningService;
-import hu.elte.inf.projeszk.cinema.model.*;
+import projeszk.eltecinema.annotation.Role;
+import projeszk.eltecinema.exception.DataNotValidException;
+import projeszk.eltecinema.exception.DuplicatedDataException;
+import projeszk.eltecinema.exception.MissingDataException;
+import projeszk.eltecinema.exception.OverLapsException;
+import projeszk.eltecinema.cinema.model.*;
+import projeszk.eltecinema.cinema.service.ScreeningService;
+import projeszk.eltecinema.cinema.model.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
