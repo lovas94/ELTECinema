@@ -1,15 +1,15 @@
-package projeszk.cinema.controller;
+package projeszk.eltecinema.controller;
 
-import projeszk.cinema.annotation.Role;
-import projeszk.cinema.dao.UserDao;
-import projeszk.cinema.exception.DataNotValidException;
-import projeszk.cinema.exception.DuplicatedDataException;
-import projeszk.cinema.exception.MissingDataException;
-import projeszk.cinema.exception.UserNotValidException;
-import alkfejl.cinema.model.*;
-import projeszk.cinema.service.UserService;
-import projeszk.cinema.model.Reservation;
-import projeszk.cinema.model.User;
+import projeszk.eltecinema.annotation.Role;
+import projeszk.eltecinema.dao.UserDao;
+import projeszk.eltecinema.exception.DataNotValidException;
+import projeszk.eltecinema.exception.DuplicatedDataException;
+import projeszk.eltecinema.exception.MissingDataException;
+import projeszk.eltecinema.exception.UserNotValidException;
+import projeszk.eltecinema.model.*;
+import projeszk.eltecinema.service.UserService;
+import projeszk.eltecinema.model.Reservation;
+import projeszk.eltecinema.model.User;
 import org.apache.commons.mail.EmailException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;

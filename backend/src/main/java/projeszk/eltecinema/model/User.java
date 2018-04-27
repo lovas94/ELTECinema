@@ -1,4 +1,4 @@
-package projeszk.cinema.model;
+package projeszk.eltecinema.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;

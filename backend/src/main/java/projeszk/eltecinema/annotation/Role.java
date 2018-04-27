@@ -1,6 +1,6 @@
-package projeszk.cinema.annotation;
+package projeszk.eltecinema.annotation;
 
-import projeszk.cinema.model.User;
+import projeszk.eltecinema.model.User;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
