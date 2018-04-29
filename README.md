@@ -12,8 +12,8 @@ Projekt eszközök beadandó
 ### Frontend
 
 1. command lineban a frontend mappájában:
-       - npm install
-       - npm start
+⋅⋅* npm install
+⋅⋅* npm start
 2. command lineban google chrome mappájában:
        - chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
        - localhost:4200-as porton lehet ezután elérni az oldalt
