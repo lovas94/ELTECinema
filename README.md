@@ -6,7 +6,7 @@ Projekt eszközök beadandó
 ### Backend
 
 - backend mappából a build.gradle fájl-t kell a fejlesztő környezetbe betallózni projekt importálása menüpont után.
-- IntelliJ-n belül a File -> Settings -> Buil, Execution, Deployment -> Compiler -> Annotation Proccessor menüpontban engedélyezni kell az Annotation Proccessing-et, mert különben fordítási hibát kapunk.
+- IntelliJ-n belül a File -> Settings -> Build, Execution, Deployment -> Compiler -> Annotation Proccessor menüpontban engedélyezni kell az Annotation Proccessing-et, mert különben fordítási hibát kapunk.
 - Ezek után futtathatjuk a backend részt.
 
 ### Frontend
@@ -14,7 +14,7 @@ Projekt eszközök beadandó
 
 1. command lineban a frontend mappájában:
   * npm install
-  * npm install start
+  * npm start
  
 2. command lineban google chrome mappájában:
   * chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
