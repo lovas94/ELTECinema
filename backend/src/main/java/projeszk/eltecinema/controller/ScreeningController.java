@@ -5,9 +5,8 @@ import projeszk.eltecinema.exception.DataNotValidException;
 import projeszk.eltecinema.exception.DuplicatedDataException;
 import projeszk.eltecinema.exception.MissingDataException;
 import projeszk.eltecinema.exception.OverLapsException;
-import projeszk.eltecinema.cinema.model.*;
-import projeszk.eltecinema.cinema.service.ScreeningService;
-import projeszk.eltecinema.cinema.model.*;
+import projeszk.eltecinema.model.*;
+import projeszk.eltecinema.service.ScreeningService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

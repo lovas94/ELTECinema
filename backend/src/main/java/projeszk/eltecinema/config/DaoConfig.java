@@ -1,13 +1,10 @@
 package projeszk.eltecinema.config;
 
-
-import hu.elte.inf.alkfejl.cinema.dao.*;
-import hu.elte.inf.alkfejl.cinema.model.*;
-import projeszk.eltecinema.dao.*;
-import projeszk.eltecinema.model.*;
 import org.hibernate.SessionFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
+import projeszk.eltecinema.dao.*;
+import projeszk.eltecinema.model.*;
 
 public class DaoConfig {
 

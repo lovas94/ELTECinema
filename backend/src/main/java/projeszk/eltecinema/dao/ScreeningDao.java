@@ -1,6 +1,5 @@
 package projeszk.eltecinema.dao;
 
-import hu.elte.inf.alkfejl.cinema.model.*;
 import projeszk.eltecinema.model.CinemaRoom;
 import projeszk.eltecinema.model.Movie;
 import projeszk.eltecinema.model.Reservation;

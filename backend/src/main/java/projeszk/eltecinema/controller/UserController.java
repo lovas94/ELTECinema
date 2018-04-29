@@ -6,7 +6,6 @@ import projeszk.eltecinema.exception.DataNotValidException;
 import projeszk.eltecinema.exception.DuplicatedDataException;
 import projeszk.eltecinema.exception.MissingDataException;
 import projeszk.eltecinema.exception.UserNotValidException;
-import projeszk.eltecinema.model.*;
 import projeszk.eltecinema.service.UserService;
 import projeszk.eltecinema.model.Reservation;
 import projeszk.eltecinema.model.User;
@@ -14,9 +13,6 @@ import org.apache.commons.mail.EmailException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
-
-
-
 
 import java.util.List;
 import java.util.UUID;

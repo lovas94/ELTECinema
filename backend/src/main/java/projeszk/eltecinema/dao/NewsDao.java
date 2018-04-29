@@ -9,3 +9,5 @@ public class NewsDao extends GenericDaoImpl<News> {
         super(userClass, sessionFactor);
     }
 }
+
+

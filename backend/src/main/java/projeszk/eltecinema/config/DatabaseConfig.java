@@ -1,7 +1,5 @@
 package projeszk.eltecinema.config;
 
-import hu.elte.inf.alkfejl.cinema.model.*;
-import projeszk.eltecinema.model.*;
 //import org.apache.commons.dbcp.BasicDataSource;
 import org.hibernate.SessionFactory;
 import org.slf4j.Logger;
@@ -11,6 +9,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
+import projeszk.eltecinema.model.*;
 
 import javax.sql.DataSource;
 import java.util.Properties;

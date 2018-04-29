@@ -1,8 +1,8 @@
 package projeszk.eltecinema.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
-import lombok.*;
 import projeszk.eltecinema.enums.AgeLimit;
+import lombok.*;
 
 import javax.persistence.*;
 import java.io.Serializable;
