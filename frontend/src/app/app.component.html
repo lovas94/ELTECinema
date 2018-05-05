@@ -1,0 +1,24 @@
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="menu">
+      <span>Hello, {{ backendService.user.username }}! </span>
+		<div class="topnav">
+			<a (click)="home()">Home</a>
+			<a *ngIf="backendService.isLoggedIn == false" (click)="login()">Login</a>
+			<a *ngIf="backendService.isLoggedIn == false" (click)="register()">Registration</a>
+			<a *ngIf="backendService.isLoggedIn == true" (click)="screenings()">Reservation</a>
+			<a *ngIf="backendService.isLoggedIn == true" (click)="accountDetails()">Account</a>
+			<a *ngIf="backendService.isLoggedIn == true" (click)="logout()">Logout</a>
+			<a *ngIf="backendService.isLoggedIn == true" (click)="bookings()">My Bookings</a>
+		</div>
+    </div>
+  </div>
+</nav>
+<div>
+    <div class="router">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,8 @@
+body, html {
+  background: url("popcorn-category-pic-1jpg_1.jpg");*/
+  background-color: #3d3b3b; /* fallback for old browsers */
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
