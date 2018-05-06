@@ -1,0 +1,43 @@
+<div class="panel panel-default login-container">
+    <div *ngIf="cinemaBackendService.isLoggedIn">
+      <br />
+      <span>Hello, {{ backendService.user.username }}! You are already logged in!</span>
+    </div>
+
+    <!--<div class="panel-heading">
+        Login
+    </div>-->
+  <!--<div *ngIf="cinemaBackendService.isLoggedIn == false">-->
+    <div class="login-page" *ngIf="cinemaBackendService.isLoggedIn == false">
+		<div class="form" (submit)="login()">
+			<form class="login-form" (submit)="login()">
+				<label class = "form-label">Email</label>
+				<input type="email" name="name" [(ngModel)]="user.email" class="form-control" placeholder="email">
+				<label class = "form-label">Username</label>
+				<input type="text" name="name" [(ngModel)]="user.username" class="form-control" placeholder="username">
+				<label class = "form-label">Password</label>
+				<input type="password" name="password" [(ngModel)]="user.password" class="form-control" placeholder="password">
+				<!--<input type="email" name="name" [(ngModel)]="user.email" placeholder="email"/>
+				<input type="text" name="name" [(ngModel)]="user.username" placeholder="username"/>
+				<input type="password" ame="password" [(ngModel)]="user.password" placeholder="password"/>-->
+					<button type="submit" class="btn btn-default">Login</button>
+					
+					<p class="message">Not registered? <a (click)="register()">Create an account</a></p>
+			</form>
+		</div>
+	<!--
+      <form (submit)="login()">
+            <label>Email</label>
+            <input type="email" name="name" [(ngModel)]="user.email" class="form-control">
+            <label>Username</label>
+            <input type="text" name="name" [(ngModel)]="user.username" class="form-control">
+            <label>Password</label>
+            <input type="password" name="password" [(ngModel)]="user.password" class="form-control">
+            <div class="buttons">
+                <button type="submit" class="btn btn-default">Login</button>
+                <button type="button" (click)="register()" class="btn btn-primary">Register</button>
+            </div>
+        </form> -->
+    </div>
+    <!--</div> -->
+</div>
