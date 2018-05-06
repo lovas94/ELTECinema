@@ -1,0 +1,11 @@
+<div class="panel panel-default">
+<section *ngFor="let new of news" class="frontpagearticlemain">
+  <header>
+    <h2 class="frontpagearticleh2"> {{ new.title }}</h2>
+  </header>
+  <time class="frontpagearticletime">{{ new.pubtime }}</time>
+
+  <p class="frontpagearticletext"> {{ new.article }}</p>
+  <p> <a href="">Read more...</a></p>
+</section>
+</div>

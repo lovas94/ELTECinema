@@ -1,0 +1,71 @@
+body
+{
+  padding: 20px;
+}
+
+.dark-panel {
+	background: #302e2e;
+	position: relative;
+	height: 70%;
+	width: 100%;
+	padding: 5px;
+}
+
+.panel {
+	background: #302e2e;
+	position: absolute;
+	margin-top: 2%;
+	height: 80%;
+	width: 60%;
+	border: 1px;
+	border-color: #680e0e;
+}
+
+.frontpagearticlefigure img
+{
+  height: 140px;
+  width: 250px;
+  background: #ccc;
+  display: block;
+}
+
+.frontpagearticle
+{
+  color: #FFFFFF;
+  float: left;
+}
+
+.frontpagearticlemain
+{
+  float: left;
+  margin-left: 30px;
+  width: 300px;
+}
+
+header
+{
+  color: #FFFFFF;
+  white-space: nowrap;
+}
+
+header h2
+{
+  color: #FFFFFF;
+  font-size: 38px;
+}
+
+time
+{
+  color: #FFFFFF;
+  float: right;
+  position: relative;
+  top: -30px;
+}
+
+.frontpagearticletext
+{
+  color: #FFFFFF;
+  width: 300px;
+  display: block;
+  margin-top: 20px;
+}

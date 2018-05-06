@@ -1,0 +1,25 @@
+<div class="panel panel-default login-container">
+    <div class="panel-heading">
+        Your ticket reservations
+    </div>
+  <table class="table">
+    <tr>
+      <th>Movie Title</th>
+      <th>Room</th>
+      <th>Row</th>
+      <th>Column</th>
+      <th>Start Time</th>
+    </tr>
+  <tr *ngFor="let reservation of reservations[0]" class="movie-row">
+    <td>{{reservation.screening.movie.title }} </td>
+    <td>{{reservation.screening.cinemaRoom.name }} </td>
+    <td>{{reservation.row}} </td>
+    <td>{{reservation.col}} </td>
+    <td>{{reservation.screening.startTime}} </td>
+    <td> <button (click)="deleteBooking(reservation.id)" class="btn btn-secondary">Delete</button> </td>
+    <td> <button (click)="buy()" class="btn btn-secondary">Buy</button> </td>
+  </tr>
+  </table>
+  <button (click)="getMyBookings()" class="btn btn-primary">Show My Bookings</button>
+
+</div>
