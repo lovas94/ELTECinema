@@ -1,0 +1,48 @@
+<div class="dark-panel">
+<div class="panel panel-default login-container">
+    <div class="panel-heading">
+        Your account details
+    </div>
+
+    <div class="panel-body">
+      <label>Username: {{ getUserName() }} </label>
+      <br />
+      <label>Full name*: {{ getFullName() }} </label>
+      <button type="button" (click)="editName()" class="btn btn-default">Edit</button>
+      <div *ngIf="isNamePressed == true">
+        <input type="text" name="name" [(ngModel)]="cinemaBackendService.user.fullName" class="form-control">
+      </div>
+      <br />
+      <label>Address*: {{ getAddress() }} </label>
+      <button type="button" (click)="editAddress()" class="btn btn-default">Edit</button>
+      <div *ngIf="isAddressPressed == true">
+      <input type="text" name="name" [(ngModel)]="cinemaBackendService.user.address" class="form-control">
+        </div>
+      <br/>
+      <label>Phone Number*: {{ getPhoneNumber() }} </label>
+      <div *ngIf="isPhoneNumberPressed == true">
+      <input type="text" name="name" [(ngModel)]="cinemaBackendService.user.phoneNumber" class="form-control">
+        </div>
+      <button type="button" (click)="editPhoneNumber()" class="btn btn-default">Edit</button>
+      <br/>
+      <label>Email: {{ getEmail() }} </label>
+      <div *ngIf="isEmailPressed == true">
+        <input type="text" name="name" [(ngModel)]="cinemaBackendService.user.email" class="form-control">
+      </div>
+      <button type="button" (click)="editEmail()" class="btn btn-default">Edit</button>
+      <br/>
+      <label>Age: {{ getAge() }} </label>
+      <div *ngIf="isAgePressed == true">
+      <input type="text" name="name" [(ngModel)]="cinemaBackendService.user.age" class="form-control">
+        </div>
+      <button type="button" (click)="editAge()" class="btn btn-default">Edit</button>
+      <br/>
+        <div *ngIf="isAddressPressed == true || isPhoneNumberPressed == true || isAgePressed == true || isNamePressed == true || isEmailPressed == true">
+        <button (click)="update()" class="btn btn-primary">Apply</button>
+          </div>
+  </div>
+</div>
+<div>
+  <h4  class="mandatory">The ones marked with * are mandatory in order to reserve a ticket!</h4>
+</div>
+</div>
