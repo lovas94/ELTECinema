@@ -1,0 +1,58 @@
+.panel {
+    margin: 15px;
+}
+
+.s-title {
+	color: #FFFFFF;
+}
+
+.dark-panel {
+	background: #302e2e;
+	position: relative;
+	height: 70%;
+	width: 100%;
+	padding: 5px;
+}
+
+.panel-adding .panel-body {
+    padding: 20px;
+}
+
+.panel-adding .form-label {
+    margin: 10px 0 5px 5px;
+}
+
+.movie-row {
+    cursor: pointer;
+}
+
+.movie-row:hover {
+    background-color: #ececec;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+h4 {
+    margin: 20px 0 0 25px;
+}
+
+.h4-admin-functions {
+	color: #FFFFFF;
+    margin-top: 50px;
+}
+
+.filter-control {
+    display: inline-block;
+    width: 300px;
+    margin-left: 20px;
+}
+
+.table>tbody>tr>td {
+    border-top: 2px solid #ddd;
+}

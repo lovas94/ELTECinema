@@ -1,0 +1,76 @@
+<div class="dark-panel">
+<h4 class="s-title">Movies</h4>
+<div class="panel panel-default">
+	
+    <div class="panel-heading">
+        <label>Filter movies:</label>
+        <input type="text" [(ngModel)]="titleFilter" (input)="filterChanged()" class="form-control filter-control">
+    </div>
+    <table class="table">
+        <tr>
+            <th>Title</th>
+            <th></th>
+            <th>Age limit</th>
+            <th>Director</th>
+            <th>Length</th>
+        </tr>
+        <tr *ngFor="let movie of filteredMovies" [routerLink]="['/reservation', movie.id]" class="movie-row">
+            <td>{{movie.title}}</td>
+            <td>
+                <span *ngIf="movie.dubbed">Dubbed</span>
+            </td>
+            <td>{{movie.ageLimit | ageLimit}}</td>
+            <td>{{movie.director}}</td>
+            <td>{{movie.length}} min.</td>
+        </tr>
+    </table>
+	</div>
+</div>
+
+<div class="dark-panel">
+
+<h4 *ngIf="isAdmin" class="h4-admin-functions">Admin functions</h4>
+<div *ngIf="isAdmin" class="panel panel-default panel-adding"> 
+    <div class="panel-heading">
+        Create a new movie
+    </div>
+    <div class="panel-body">
+        <div>
+            <label class="form-label">title</label>
+            <input type="text" [(ngModel)]="newMovie.title" class="form-control">
+        </div>
+        <div>
+            <label class="form-label">story</label>
+            <input type="text" [(ngModel)]="newMovie.story" class="form-control">
+        </div>
+        <div>
+            <label class="form-label">director</label>
+            <input type="text" [(ngModel)]="newMovie.director" class="form-control">
+        </div>
+        <div>
+            <label class="form-label">length</label>
+            <input type="number" [(ngModel)]="newMovie.length" class="form-control">
+        </div>
+        <div>
+            <label class="form-label">age limit</label>
+            <select [(ngModel)]="newMovie.ageLimit" class="form-control">
+                <option [ngValue]="'AGE_LIMIT_NONE'">-</option>
+                <option [ngValue]="'AGE_LIMIT_8'">8</option>
+                <option [ngValue]="'AGE_LIMIT_12'">12</option>
+                <option [ngValue]="'AGE_LIMIT_16'">16</option>
+                <option [ngValue]="'AGE_LIMIT_18'">18</option>
+            </select>
+        </div>
+        <div>
+            <label class="form-label">dubbed</label>
+            <select [(ngModel)]="newMovie.dubbed" class="form-control">
+                <option [ngValue]="true">dubbed</option>
+                <option [ngValue]="false">not dubbed</option>
+            </select>
+        </div>
+        <div class="btn-container">
+            <button (click)="addMovie()" class="btn btn-primary">Add movie</button>
+        </div>
+    </div>
+</div>
+</div>
