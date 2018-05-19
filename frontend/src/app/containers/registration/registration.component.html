@@ -1,0 +1,26 @@
+<div *ngIf="regSuccessful == false" class="panel panel-default login-container">
+        <div class="panel-body">
+            <form class="form" (submit)="register()">
+                
+                <input type="text" name="name" ngModel email="true" [(ngModel)]="user.username" class="form-control" placeholder="username">
+               
+                <input type="email" name="email" [(ngModel)]="user.email" class="form-control" placeholder="email">
+                
+                <input type="password" name="password" [(ngModel)]="user.password" class="form-control" placeholder="password">
+                
+                <input type="password" name="passwordConfirm" [(ngModel)]="passwordConfirm" class="form-control" placeholder="confirm password">
+                <div class="buttons">
+                    <button type="submit" class="btn btn-primary">Register</button>
+					<p class="message">You already have an account? <a [routerLink]="['/login']">Go and log in</a></p>
+                </div>
+            </form>
+        </div>
+</div>
+<div *ngIf="regSuccessful == true" class="panel panel-default login-container">
+  <div class="panel-heading">
+    <p>You successfully registered! We are sending you an e-mail with a confirmation code.</p><br/>
+    <p>Enter your code below:</p>
+    <input type="text" name="name" [(ngModel)]="pwConf" class="form-control">
+    <button type="submit" (click)=checkCode() class="btn btn-primary">Register</button>
+  </div>
+</div>
