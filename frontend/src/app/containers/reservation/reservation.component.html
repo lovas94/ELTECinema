@@ -1,0 +1,55 @@
+<div class="dark-panel">
+<div *ngIf="missingDetails == false">
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h4>Select a screening time</h4>
+    </div>
+    <div class="panel-body">
+        <select [(ngModel)]="selectedScreening" (change)="selectScreening()" class="form-control">
+            <option *ngFor="let screening of screenings" [ngValue]="screening">
+                {{screening.startTime | date : 'short'}}
+            </option>
+        </select>
+    </div>
+</div>
+<table *ngIf="selectedScreening" class="seat-table">
+    <tr *ngFor="let i of Array(selectedScreening.cinemaRoom.rows).fill(1); let row = index">
+        <td *ngFor="let j of Array(selectedScreening.cinemaRoom.columns).fill(1); let col = index"
+            class="place"
+            [ngClass]="{ reserved: reservations && reservations[row] && reservations[row][col] }"
+            (click)="reserve(row, col)">
+        </td>
+    </tr>
+</table>
+<h4 *ngIf="isAdmin && selectedScreening" class="h4-admin-functions">Admin functions</h4>
+<div *ngIf="isAdmin && selectedScreening" class="panel panel-default panel-adding">
+    <div class="panel-heading">
+        Create a new screening
+    </div>
+    <div class="panel-body">
+        <div>
+            <label class="form-label">Start time</label>
+            <div class="input-group">
+                <span class="input-group-addon">Year-Month-Day Hour:Minutes</span>
+                <input type="text" [(ngModel)]="startTime" class="form-control">
+            </div>
+        </div>
+        <div>
+            <label class="form-label form-label-end-time">End time</label>
+            <div class="input-group">
+                <span class="input-group-addon">Year-Month-Day Hour:Minutes</span>
+                <input type="text" [(ngModel)]="endTime" class="form-control">
+            </div>
+        </div>
+        <div class="btn-container">
+            <button (click)="addScreening()" class="btn btn-success">Add screening</button>
+        </div>
+    </div>
+</div>
+</div>
+<div *ngIf="missingDetails == true" class="panel panel-default">
+  <h4>Sorry, but some of your details are missing (Phone Number etc.)</h4>
+  <h4>Please go into account details and change your details before making a reservation!</h4>
+  <button (click)="redirectToAccount()" class="btn btn-success">Go to my account</button>
+</div>
+</div>

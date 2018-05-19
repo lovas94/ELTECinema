@@ -1,0 +1,93 @@
+.place {
+    height: 30px;
+    width: 30px;
+    border: 2px solid #e4e4e4;
+    background: #5cb85c;
+}
+
+.dark-panel {
+	background: #302e2e;
+	position: relative;
+	height: 70%;
+	width: 100%;
+	padding: 5px;
+}
+
+.place:hover {
+    background: #f9d39d;
+}
+
+.panel {
+    margin: 15px;
+}
+
+.seat-table {
+    margin: 15px auto 15px auto;
+}
+
+.place.reserved {
+    background: #f0ad4e;
+}
+
+.panel-adding .form-label {
+    margin: 10px 0 5px 220px;
+}
+
+.panel-adding .form-label.form-label-end-time {
+    margin-top: 20px;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.h4-admin-functions {
+    margin-top: 50px;
+    margin: 20px 0 0 25px;
+}.place {
+    height: 30px;
+    width: 30px;
+    border: 2px solid #e4e4e4;
+    background: #5cb85c;
+}
+
+.panel {
+    margin: 15px;
+}
+
+.seat-table {
+    margin: 15px auto 15px auto;
+}
+
+.place.reserved {
+    background: #f0ad4e;
+}
+
+.panel-adding .form-label {
+    margin: 10px 0 5px 220px;
+}
+
+.panel-adding .form-label.form-label-end-time {
+    margin-top: 20px;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+.btn-container {
+    text-align: center;
+}
+
+.h4-admin-functions {
+    margin-top: 50px;
+    margin: 20px 0 0 25px;
+}
+
+td {
+    cursor: pointer;
+}
