@@ -20,5 +20,7 @@ Projekt eszközök beadandó
   * chrome.exe --user-data-dir="C:/Chrome dev session" --disable-web-security
   * localhost:4200-as porton lehet ezután elérni az oldalt
   
-  
-A http://fae56bb3.ngrok.io/ címen Jenkinssel összekapcsolva, push után történik a build. A szolgáltatás 8 óráig fut egyszerre, utána újra kell indítani, így változhat a cím.
+
+Build system: Jenkins a backend részre. Localhoston fut, de elérhető jelenleg a http://8500632c.ngrok.io/ címen.
+A szolgáltatás 8 óráig fut egyhuzamban, utána újra kell indítani, újraindítás után változik a cím, mindig frissítve lesz itt a leírásban. 
+#### belépés: felhasználó: lovas94 jelszó: ++Projeszk++
