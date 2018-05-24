@@ -21,4 +21,4 @@ Projekt eszközök beadandó
   * localhost:4200-as porton lehet ezután elérni az oldalt
   
   
-  Localhost-on Jenkinssel összekapcsolva, push után történik a build.
+A http://fae56bb3.ngrok.io/ címen Jenkinssel összekapcsolva, push után történik a build. A szolgáltatás 8 óráig fut egyszerre, utána újra kell indítani, így változhat a cím.
