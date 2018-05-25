@@ -21,6 +21,6 @@ Projekt eszközök beadandó
   * localhost:4200-as porton lehet ezután elérni az oldalt
   
 
-Build system: Jenkins a backend részre. Localhoston fut, de elérhető jelenleg a https://385aeebf.ngrok.io/login?from=%2F címen.
+Build system: Jenkins a backend részre. Localhoston fut, de elérhető jelenleg a https://416390d0.ngrok.io címen.
 A szolgáltatás 8 óráig fut egyhuzamban, utána újra kell indítani, újraindítás után változik a cím, mindig frissítve lesz itt a leírásban. 
 #### belépés: felhasználó: lovas94 jelszó: ++Projeszk++
